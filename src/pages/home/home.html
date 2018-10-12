@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      ยินดีต้อนรับ
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+       <ion-item>
+         <ion-label >Name</ion-label>
+         <ion-input type="text" [(ngModel)]="fullname" ></ion-input>
+       </ion-item>
+       <ion-list >
+         <ion-item  (click)="goDetail(item)"   *ngFor="let item of userList"  >
+         Name: {{item.username}} , id:{{item.id}}
+         </ion-item>
+       </ion-list>
+
+
+      
+      
+</ion-content>

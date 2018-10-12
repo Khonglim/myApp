@@ -1,0 +1,72 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+
+    <ion-title>เข้าระบบ</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item no-lines style="text-align:center">
+
+    <img src="http://hr.ngg.link/public_html/img/NGGlogo.jpg" alt="" height="80px">
+
+  </ion-item>
+
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col col-12>
+
+        <ion-item>
+
+          <ion-input round type="text" placeholder="Username" name="username" #username></ion-input>
+
+        </ion-item>
+
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+
+      <ion-col col-12>
+
+        <ion-item>
+
+          <ion-input type="password" placeholder="Password" name="password" #password></ion-input>
+
+        </ion-item>
+
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+       <div style="margin-top: 35px">
+          <button ion-button round block  color="danger"  (click)="signIn()">เข้าระบบ</button>
+          <button ion-button round outline block  color="danger"  (click)="signUp()">ลงทะเบียน</button>
+       </div>
+       
+       <div style="margin-top: 100px">
+
+         <ion-label style="text-align:center">พัฒนาโดยนักศึกษาฝึกงาน</ion-label>
+        </div>
+       
+
+
+
+
+
+
+</ion-content>
